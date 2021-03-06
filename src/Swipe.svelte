@@ -11,6 +11,7 @@
 
   export let active_item = 0; //readonly
   export let is_vertical = false;
+  export let style = "";
 
   let activeIndicator = 0,
     indicators,
@@ -254,7 +255,7 @@
 }
 
 </style>
-<div class="swipe-panel">
+<div class="swipe-panel" {style}>
   <div class="swipe-item-wrapper" bind:this={swipeWrapper}>
     <div class="swipeable-total_elements">
       <div class="swipeable-slot-wrapper">
